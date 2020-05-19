@@ -1,1 +1,38 @@
-<p>login works!</p>
+<div class="auth-wrapper d-flex no-block justify-content-center align-items-center position-relative"
+    style="background:url(assets/images/big/auth-bg.jpg) no-repeat center center; background-size: 170rem;">
+    <div class="auth-box row">
+        <div class="col-lg-7 col-md-5 modal-bg-img" style="background-image: url(assets/images/dispapeles/banner-login.png); background-position-x: 1035px;">
+        </div>
+        <div class="col-lg-5 col-md-7 bg-white">
+            <div class="p-3">
+                <div class="text-center">
+                    <img src="./assets/images/dispapeles/logo.png" alt="wrapkit" width="220px">
+                </div>
+                <h2 class="mt-3 text-center">Iniciar Sesión</h2>
+                <p class="text-center">Por favor, ingresa tu usuario y contraseña.</p>
+                <form class="mt-4">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="form-group">
+                                <label class="text-dark" for="uname">Usuario</label>
+                                <input class="form-control" id="uname" type="text" placeholder="user@gmail.com">
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="form-group">
+                                <label class="text-dark" for="pwd">Contraseña</label>
+                                <input class="form-control" id="pwd" type="password" placeholder="Tu contraseñas">
+                            </div>
+                        </div>
+                        <div class="col-lg-12 text-center">
+                            <button type="submit" class="btn btn-block btn-dark" (click)="signin()">Ingresa</button>
+                        </div>
+                        <div class="col-lg-12 text-center mt-5">
+                            &nbsp;
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
