@@ -12,14 +12,32 @@
                 </li>
                 <li class="list-divider"></li>
                 <li class="nav-small-cap"><span class="hide-menu">Administrador</span></li>
-                <li class="sidebar-item" [ngClass]="{'selected' : route.match('admin/store')}">
-                    <a class="sidebar-link" [routerLink]="['admin/store']" aria-expanded="false">
+                <li class="sidebar-item" [ngClass]="{'selected' : route.match('admin/sells')}">
+                    <a class="sidebar-link" [routerLink]="['admin/sells']" aria-expanded="false">
+                        <i data-feather="tag" class="feather-icon"></i>
+                        <span class="hide-menu">Pedidos</span>
+                    </a>
+                </li>
+                <li class="sidebar-item" [ngClass]="{'selected' : route.match('admin/inventory')}">
+                    <a class="sidebar-link" [routerLink]="['admin/inventory']" aria-expanded="false" routerLink="active">
                         <i data-feather="tag" class="feather-icon"></i>
                         <span class="hide-menu">Inventario</span>
                     </a>
                 </li>
-                <li class="sidebar-item" [ngClass]="{'selected' : route.match('admin/sells')}">
-                    <a class="sidebar-link" [routerLink]="['admin/sells']" aria-expanded="false" routerLink="active">
+                <li class="sidebar-item" [ngClass]="{'selected' : route.match('admin/products')}">
+                    <a class="sidebar-link" [routerLink]="['admin/products']" aria-expanded="false" routerLink="active">
+                        <i data-feather="tag" class="feather-icon"></i>
+                        <span class="hide-menu">Productos</span>
+                    </a>
+                </li>
+                <li class="sidebar-item" [ngClass]="{'selected' : route.match('admin/customers')}">
+                    <a class="sidebar-link" [routerLink]="['admin/customers']" aria-expanded="false" routerLink="active">
+                        <i data-feather="tag" class="feather-icon"></i>
+                        <span class="hide-menu">Clientes</span>
+                    </a>
+                </li>
+                <li class="sidebar-item" [ngClass]="{'selected' : route.match('admin/profits')}">
+                    <a class="sidebar-link" [routerLink]="['admin/profits']" aria-expanded="false" routerLink="active">
                         <i data-feather="tag" class="feather-icon"></i>
                         <span class="hide-menu">Ventas</span>
                     </a>
